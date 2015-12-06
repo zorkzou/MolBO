@@ -1,4 +1,4 @@
-<img src="https://github.com/zorkzou/MolBO/molbo-logo.png" />
+<img src="https://raw.githubusercontent.com/zorkzou/MolBO/master/molbo-logo.png" />
 
 # MolBO
 Generate NBO-47 file from the output file of MOLPRO.
