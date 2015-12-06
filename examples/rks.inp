@@ -1,0 +1,41 @@
+***,test
+memory,20,m
+
+gprint,basis=10
+
+geometry={!nosym
+f;
+h,1,r1;
+}
+
+r1=0.96 angstrom;
+
+basis=3-21g
+
+{rks,b-lyp;wf,10,1,0;}
+
+{matrop
+load,mydao,den,2100.2
+write,mydao
+
+! fock matrix is optional
+fock,myfck,mydao
+write,myfck
+
+! MO matrix is optional
+load,myorb,orb,2100.2
+write,myorb
+
+! kinetic matrix is optional
+LOAD,myki,EKIN
+write,myki
+
+! potential matrix is optional
+LOAD,mypot,EPOT
+write,mypot
+
+load,mysao,s,2100.2
+write,mysao
+}
+
+---

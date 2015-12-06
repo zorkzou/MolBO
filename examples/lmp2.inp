@@ -1,0 +1,44 @@
+***,test
+memory,20,m
+
+gprint,basis=10
+
+geometry={nosym
+f;
+h,1,r1;
+}
+
+r1=0.96 angstrom;
+
+basis=vdz
+
+hf;
+
+{lmp2;natorb,4300.2;dm,4300.2;}
+
+{matrop
+load,mydao,den,4300.2
+write,mydao
+
+! fock matrix is optional
+! NOTE: PT2 ANALYSIS OF FOCK MATRIX is not defined for post-HF
+!fock,myfck,mydao
+!write,myfck
+
+! MO matrix is optional
+load,myorb,orb,4300.2
+write,myorb
+
+! kinetic matrix is optional
+LOAD,myki,EKIN
+write,myki
+
+! potential matrix is optional
+LOAD,mypot,EPOT
+write,mypot
+
+load,mysao,s,4300.2
+write,mysao
+}
+
+---

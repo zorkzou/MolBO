@@ -1,0 +1,53 @@
+***, test
+memory,80,m
+
+gprint,basis=10
+
+r=0.957 angstrom
+theta=104.6 degree
+
+geometry={z;
+O;
+H1,O,r;
+H2,O,r,H1,theta}
+
+basis=cc-pvdz
+
+{hf;wf,10,1;}
+
+{multi;
+occ,6,1;closed,2;frozen,1;
+wf,10,1,0;}
+
+{ci;
+occ,6,1;closed,2;core,1;
+wf,10,1,0;
+natorb,2352.2;dm,2352.2;
+}
+
+{matrop
+load,mydao,den,2352.2
+write,mydao
+
+! fock matrix is optional
+! NOTE: PT2 ANALYSIS OF FOCK MATRIX is not defined for post-HF
+!fock,myfck,mydao
+!write,myfck
+
+! MO matrix is optional
+load,myorb,orb,2352.2
+write,myorb
+
+! kinetic matrix is optional
+LOAD,myki,EKIN
+write,myki
+
+! potential matrix is optional
+LOAD,mypot,EPOT
+write,mypot
+
+load,mysao,s,2352.2
+write,mysao
+}
+
+---

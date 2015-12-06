@@ -1,0 +1,46 @@
+***, ch2                      ! A1 singlet state
+memory,80,m
+
+gprint,basis=10
+
+geometry={z;angstrom;
+c
+h1,c,1.117
+h2,c,1.117,h1,102.4}
+
+basis=vdz
+
+hf
+
+{multi;occ,6,1;closed,1      ! Fully variational VB calculation
+{vb;print,,,,,2}
+natorb,2352.2;dm,2352.2;
+}
+
+{matrop
+load,mydao,den,2352.2
+write,mydao
+
+! fock matrix is optional
+! NOTE: PT2 ANALYSIS OF FOCK MATRIX is not defined for post-HF
+!fock,myfck,mydao
+!write,myfck
+
+! MO matrix is optional
+load,myorb,orb,2352.2
+write,myorb
+
+! kinetic matrix is optional
+LOAD,myki,EKIN
+write,myki
+
+! potential matrix is optional
+LOAD,mypot,EPOT
+write,mypot
+
+load,mysao,s,2352.2
+write,mysao
+}
+
+---
+

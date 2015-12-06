@@ -1,0 +1,43 @@
+***, FHeO-
+memory,80,m
+
+gprint,basis=10
+
+geometry={
+He;
+F,1,r1;
+O,1,r2,2,180.;
+}
+
+r1=1.637 angstrom;
+r2=1.054 angstrom;
+
+basis=cc-pvtz
+
+{hf;wf,20,1,0;}
+
+{matrop
+load,mydao,den,2100.2
+write,mydao
+
+! fock matrix is optional
+fock,myfck,mydao
+write,myfck
+
+! MO matrix is optional
+load,myorb,orb,2100.2
+write,myorb
+
+! kinetic matrix is optional
+LOAD,myki,EKIN
+write,myki
+
+! potential matrix is optional
+LOAD,mypot,EPOT
+write,mypot
+
+load,mysao,s,2100.2
+write,mysao
+}
+
+---
