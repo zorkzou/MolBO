@@ -19,3 +19,5 @@ Version 2.1.5 (07/04/2014).
 See readme.html for details.
 
 See NBO6 webpage for better support of higher versions of MOLPRO: http://nbo6.chem.wisc.edu/INSTALL.molpro
+
+Examples of applications can be found in W. Zou, D. Nori-Shargh, and J. E. Boggs, On the Covalent Character of Rare Gas Bonding Interactions: A New Kind of Weak Interaction, J. Phys. Chem. A, 2013, 117(1), pp 207-212 at http://pubs.acs.org/doi/abs/10.1021/jp3104535
