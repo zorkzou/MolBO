@@ -2,7 +2,7 @@ c-----------------------------------------------------------------------
 c--- MOLBO: a utility to generate the *.47 file from MOLPRO output.
 c--- Written in FORTRAN 77 and a bit of FORTRAN 90.
 c---
-c--- Tested for MOLPRO 2006~2010 and NBO 3&5.
+c--- Tested for MOLPRO 2006~2010 and NBO 3, 5, and 6.
 c---
 c--- E-mail: qcband@gmail.com
 c-----------------------------------------------------------------------
