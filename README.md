@@ -14,7 +14,7 @@ Version 2.1.5 (07/04/2014).
 1. It reads basis sets, overlap matrix, Fork matrix, density matrix, ... from [MOLPRO](http://www.molpro.net/)'s output file (use GPRINT and MATROP commands to obtain these data; see the examples), and prepares [NBO](http://nbo.chem.wisc.edu/)'s *.47 file.
 2. It calculates Mayer's bond orders (MBO).
 3. Electronic densities can be calculated at the following levels of theory by [MOLPRO](http://www.molpro.net/): SCF (RHF, ROHF, UHF, RDFT, RODFT, UDFT; with or without density fitting), Post-HF (MP2, MP3, CCSD, QCISD, QCISD(T), EOM-CCSD, Full-CI), Local Post-HF (LMP2), multi-configurational methods (MCSCF or CASSCF, CASVB, MRCI including SRCI, CASPT2 including SRMP2).
-4. [MOLPRO](http://www.molpro.net/) 2006 - 2010 and NBO [3.1]http://www.ccl.net/cca/software/SOURCES/FORTRAN/nbo/index.shtml, 5.x, and [6.x](http://nbo.chem.wisc.edu/) have been tested.
+4. [MOLPRO](http://www.molpro.net/) 2006 - 2010 and NBO [3.1](http://www.ccl.net/cca/software/SOURCES/FORTRAN/nbo/index.shtml), 5.x, and [6.x](http://nbo.chem.wisc.edu/) have been tested.
 
 ## Limitations
 
