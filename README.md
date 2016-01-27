@@ -22,7 +22,7 @@ Version 2.1.5 (07/04/2014).
 2. For a restart calculation of [MOLPRO](http://www.molpro.net/), do not use the permanent file 1.
 3. For the all-electron relativistic calculations (e.g. DKHn), do not print kinetic energy and potential energy matrices because they are non-relativistic.
 
-See readme.html for details.
+See [readme.html](http://htmlpreview.github.io/?https://raw.githubusercontent.com/zorkzou/MolBO/master/readme.html) for details.
 
 See [NBO6](http://nbo.chem.wisc.edu/) webpage for better support of higher versions of [MOLPRO](http://www.molpro.net/): http://nbo6.chem.wisc.edu/INSTALL.molpro
 
